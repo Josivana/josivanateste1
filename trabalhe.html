@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trabalhe conosco</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/cbb6d5c68b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<header class= "sticky-top">
+		<div class="topo shadow-sm" id="topo">
+			<div class="container">
+				<div class="row d-flex align-items-center justify-content-evenly">
+					<div class="col-6">
+						<a class="logo"	href="index.html">
+							<img src="img/logo2.jpg" alt="Logotipo">
+						</a>
+					</div>
+
+					<div class="col-6">
+						<nav class="navbar navbar-light d-sm-none d-flex align-items-center justify-content-evenly">
+							<div class="container-fluid">
+								<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile" >
+								<span class="navbar-toggler-icon"></span>
+								</button>
+							</div>
+						</nav>
+						<div class="d-none d-sm-block">
+							<nav class="nav d-flex align-items-center justify-content-evenly">
+								<a class="nav-link" href="index.html">HOME</a>
+								<a class="nav-link" href="sobre.html"target="_blank">SOBRE</a>
+								<a class="nav-link" href="produtos.html"target="_blank">PRODUTOS</a>
+								<a class="nav-link" href="contato.html"target="_blank">CONTATO</a>
+								<a class="btn btn-success rounded-pill" href="#" id="exceto">(99) 99999-9999</a>
+							</nav>
+						</div>
+
+					</div>
+					<div class="col-12">
+						<div class="collapse" id="menuMobile">
+						<nav class="nav flex-column d-flex align-items-center justify-content-evenly">
+							<a class="nav-link" href="index.html">HOME</a>
+							<a class="nav-link" href="sobre.html"target="_blank">SOBRE</a>
+							<a class="nav-link" href="produtos.html"target="_blank">PRODUTOS</a>
+							<a class="nav-link" href="contato.html"target="_blank">CONTATO</a>
+							<a class="btn btn-success rounded-pill" href="#" id="exceto">(99) 99999-9999</a>							
+						</nav>
+						</div>
+					</div>
+					
+
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<br>
+			<div class="row mt-3" id="texto-formulario">
+				<h1>Trabalhe conosco</h1>				
+				<p>Preencha o formulário abaixo e anexe seu currículo</p>
+			</div>				
+			<div class="row justify-content-center mt-2">
+				<div class="col-6">
+					<form class="needs-validation" name="formulario-teste" method="post" action="">
+						<div class="row mt-3 ">
+							<label class="form-label col-4">Nome:</label>
+							<div class="col-8">
+								<input required class="form-control " type="text" name="nome" >							
+							</div>
+						</div>
+						<div class="row mt-3">
+							<label class="form-label col-4">Endereço de e-mail:</label>
+							<div class="col-8">
+								<input required class="form-control" type="email" name="email">
+							</div>
+						</div>
+						<div class="row mt-3">
+							<label class="form-label col-4">Telefone (com DDD): </label>
+							<div class="col-8">
+								<input required class="form-control " type="text" name="nome" >				
+							</div>
+						</div>
+						<div class="row mt-3 ">
+							<label class="form-label col-4">Assunto:</label>
+							<div class="col-8">
+								<input required class="form-control " type="text" name="nome" >							
+							</div>
+						</div>
+						<div class="row mt-3">
+							<label for="exampleFormControlTextarea1">Descrição:</label>							
+							<div class="col-12">
+								<textarea class="form-control" rows="3"></textarea>
+							</div>
+						</div>
+						<br>
+						<div class="row mt-3">
+							<label class="form-label col-4">Anexe seu currículo:</label>
+							<div class="col-8">
+								<input class="form-control" type="file" name="file">
+							</div>
+						</div>
+						<br>					
+						<br>
+						<br>
+						<div class="btn-personalizado">	
+							<button class="btn btn-block" align-center onclick="validador()" type="submit" >Enviar</button>
+						</div>	
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>				
+						<br>
+					</form>
+
+				</div>
+			</div>
+		</div>		
+	</section>	
+	<footer class="rodape" id="contato">
+		<div class="container">			
+			<div class="row">
+				<div class="col-12 col-sm-4 mt-5 mb-5">
+					<h4>INSTITUCIONAL</h4>
+					<ul class="nav flex-column">
+						<li class="nav-item">							
+							<a class="nav-link" href="envio.html"target="_blank">Compra e envio</a>						
+							<a class="nav-link" href="contato.html"target="_blank">Fale conosco</a>
+							<a class="nav-link" href="trabalhe.html"target="_blank">Trabalhe conosco</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="col-12 col-sm-4 mt-5 mb-5">
+					<h4>Redes Sociais</h4>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="https://github.com/Josivana/silva.git" target="_blank">Github</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://www.linkedin.com/in/josivana-silva-cunha/" target="_blank">Linkedin</a>
+							</li>
+						</ul>
+				</div>
+				<div class="col-12 col-sm-4 mt-5 mb-5">
+					<h4>ATENDIMENTO</h4>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<b>Funcionamento:</b>
+							<p>De segunda a sexta das 8h às 17h.</p>
+							<b>Endereço:</b>
+							<p>Rua 45, qd 63, lote 23 A - Jd. Céu azul - Valparaíso de Goiás</p>
+						</li>
+					</ul>
+				</div>				
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
